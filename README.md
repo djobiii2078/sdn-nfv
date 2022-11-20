@@ -18,7 +18,7 @@ Le contrôle terminal portera sur des notions vues en cours, ainsi que sur celle
 Les dates de soumissions des rapports sont strictes. Un rapport soumis en retard est équivalent à une note de 0.
 Les dates de soumissions indiqués corresondent au dernier jour ou vous pourrez déposer vos fichiers (ex : le td3 peut être soumis le 01/12/2022 mais à partir de 00:00 - sauf mention du contraire - dans la nuit du 01/12/2022 au 02/12/2022 cela ne sera plus possible)
 
-On utilisera Github Classroom pour tracer les heures de soumission et votre évolution pour les TDs/TPs.
+On utilisera Github Classroom pour tracer les heures de soumission et votre évolution pour les TDs/TPs: https://classroom.github.com/a/dAuAvRGx.
 
 | Dates  | Type | Titre | Evaluation | Date limite de soumission
 | :------------   | :---------------: | :---------------:               | :---------------: | :---------------: |
