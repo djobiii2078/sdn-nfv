@@ -29,6 +29,7 @@ où:
 Concrètement, votre script doit déterminer l'adresse ip du container ciblé (ou pas) , puis chaque *100ms*, effectuer des heartbeats et déterminer l'état du container : **bon** si la latence
   est supérieure à **<latence_seuil>** et **faible** si en dessous.
   Lorsque l'état devient faible, la procédure de passage à l'échelle est declenchée.
+  
   **NB: Chaque fois qu'un heartbeat est effectuée, votre script affiche l'état et la latence sous le format `<nom_container>  <latence>  <état>`.**
   
   2. Tester votre solution en écrivant un mini client qui envoie 1000 requêtes chaque 10ms au load balancer afin de surcharger votre infrastructure.
