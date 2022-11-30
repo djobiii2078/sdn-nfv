@@ -23,11 +23,11 @@ où:
 
 - *customOrc* est le nom de votre executable
 - *nom_container* est le nom du container à surveiller 
-- *latence_seuil* est la latence de réponse du container en millisecondes en desous de laquelle il faut déclencher le mécanisme de passage à l'échelle.
+- *latence_seuil* est la latence de réponse du container en millisecondes au dessus de laquelle il faut déclencher le mécanisme de passage à l'échelle.
 - *nbs* est le nombre d'instances du container à démarrer en cas de passage à l'échelle.
 
 Concrètement, votre script doit déterminer l'adresse ip du container ciblé (ou pas) , puis chaque *100ms*, effectuer des heartbeats et déterminer l'état du container : **bon** si la latence
-  est supérieure à **<latence_seuil>** et **faible** si en dessous.
+  est inférieure à **<latence_seuil>** et **faible** si au dessus.
   Lorsque l'état devient faible, la procédure de passage à l'échelle est declenchée.
   
   **NB: Chaque fois qu'un heartbeat est effectuée, votre script affiche l'état et la latence sous le format `<nom_container>  <latence>  <état>`.**
