@@ -1,13 +1,13 @@
-# TP1: Rappel + Introduction à Kubernetes
+# TP1: Rappel + Mise en bouche pour Kubernetes
 
-Ce TP a pour objectif de rappeler les concepts de base des containers et faire une introduction sur Kubernetes.
-De plus, vous allez être amener à implementer certaines fonctionnalités de Kubernetes pour saisir la complexité de le l'outil.
+Ce TP a pour objectif de rappeler les concepts de base des containers et faire une mise en bouche pour Kubernetes.
+Concrètement, vous allez être amener à implementer certaines fonctionnalités de Kubernetes pour saisir la complexité de le l'outil.
 
 ## Rappel: Déploiement d'un load balancer à trois instances.
 
 L'objectif est de recréer un load balancer similaire à celui implementée les années antérieures.
 
-1. Ecrire la spécification pour les containers pour trois serveurs de votre choix (sur l'exemple ci-dessous, on considère Tomcat, Apache, et Express mais vous êtes libre de choisir).
+1. Ecrire la spécification pour les containers pour trois serveurs web de votre choix e.g., Tomcat, Apache, et Express.
 2. Ecrire la spécification pour le composant **LB**, qui se chargera de recevoir les requêtes et de choisir **aléatoirement** le serveur web cible.
 3. Démarrer les containers et assurer vous qu'ils communiquent dans un réseau propre qui aura pour test **orchestrateurtest**.
 4. Tester votre architecture et vérifier que le load balancer fonctionne correctement.
