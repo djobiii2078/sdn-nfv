@@ -13,7 +13,7 @@ Il est très utile pour des déploiement rapide et des test hors production.
 ### Installation de MiniKube
 
 Pour installer minikube, telecharger le package sur le dépot officiel [https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb](https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb).
-Depending on your distribution and environment, you can check the official website: [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/).
+En fonction de votre distribution, vous pouvez vérifier le site officiel: [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/).
 
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
