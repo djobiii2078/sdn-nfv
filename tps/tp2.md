@@ -157,6 +157,7 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://a
 sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+sudo swapoff -a
 ```
 
 **Sur le master**
@@ -190,8 +191,7 @@ Vérifier que vos workers sont bien présent avec `kubectl get nodes`
 Déployons l'add-on `weave` qui facilite la création des politiques réseau et est utilisé par notre application cible
 
 ```
-curl -o weave.yaml https://cloud.weave.works/k8s/v1.8/net.yaml
-kubectl apply -f weave.yaml
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 ```
 
 *Je vous invite à regarder le contenu du fichier `weave.yaml`.*
