@@ -11,7 +11,7 @@ L'architecture de MiniOS est décrite ici [https://wiki.xenproject.org/wiki/Mini
 En fonction des périphériques associé à MiniOS, son comportement peut varier, mais l'OS boucle sur le système de stockage et écrivant des données aléatoires, afficher les paquets réseau entrant, et maintenir une horloge.
 Pour obtenir une image de MiniOS, suivez les étapes ci-dessous:
 
-- Obtenir le code source de MiniOS: `git clone https://github.com/sysml/mini-os.git`
+- Obtenir le code source de MiniOS: `git clone https://github.com/xen-project/mini-os.git`
 - Télechargez LwIP 1.3.2 (une implémentation légère du protocole TCP/IP) : `wget https://download.savannah.nongnu.org/releases/lwip/older_versions/lwip-1.3.2.zip`
 - Décompressez l'archive LwIP: `unzip lwip-1.3.2.zip`
 - Compilez le noyau de MiniOS: `make LWIPDIR=$(pwd)/lwip-1.3.2`
