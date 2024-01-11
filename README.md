@@ -6,12 +6,10 @@
 
 ## La procédure d'évaluation
 
-Ce module sera évalué sur la base des rapports et du code issu des TP, et un examen combinant théorique et pratique de 4h.
+Ce module sera évalué sur d'un projet et d'une présentation tutoré.
 
 Tous les rapports doivent fidèlement rendre compte de votre travail.
 Vous y écrirez ce que vous comprenez des exercices, les différents problèmes que vous rencontrez et comment vous réussissez à les résoudre, ainsi que les réponses au questions théoriques présentes dans les sujets de TP. Les TPs peuvent être réaliser en binôme ou seul (un TP fait en binôme implique que les rendus sont commun).
-
-Le contrôle terminal portera sur des notions vues en cours, ainsi que sur celles vues en TP.
 
 ## Organisation du cours
 
@@ -20,4 +18,3 @@ Les dates de soumissions indiqués corresondent au dernier jour ou vous pourrez 
 
 | Dates  | Type | Titre | Evaluation | Date limite de soumission
 | :------------   | :---------------: | :---------------:               | :---------------: | :---------------: |
-| 09/09/2022      | Devoir 1 | Résumé + Avantages des NFVs  |  Rapport    |  22/11/2022 à 7h59  |
