@@ -143,7 +143,7 @@ int tc_drop_port(struct __sk_buff *skb) {
     }
 
 
-    return TC_ACT_OK;
+    return XDP_PASS;
 }
 
 char _license[] SEC("license") = "GPL";
