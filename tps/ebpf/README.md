@@ -154,7 +154,7 @@ Compilons ce code avec `clang -O2 -g -target bpf -c ebpf_drop.c -o ebpf_drop.o`
 Attachons ce code pour filtrer les paquets entrant sur l'interface principale de votre serveur (ici je suppose `eth0`): 
 
 ```
-sudo ip link set dev eth0 xdp obj xdp_drop_port_map.o sec xdp
+sudo ip link set dev eth0 xdp obj ebpf_drop.o sec xdp
 ```
 
 Retester la connexion avec `iperf3` et commenter vos observations avec `tcpdump` sur les deux machines.
