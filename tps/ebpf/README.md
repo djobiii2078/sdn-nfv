@@ -156,6 +156,7 @@ Attachons ce code pour filtrer les paquets entrant sur l'interface principale de
 ```
 sudo ip link set dev eth0 xdp obj ebpf_drop.o sec xdp
 ```
+Corriger les erreurs du code qui sont signalés par le checkeur ebpf. 
 
 Retester la connexion avec `iperf3` et commenter vos observations avec `tcpdump` sur les deux machines.
 
