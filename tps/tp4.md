@@ -384,16 +384,16 @@ int main(int argc, char **argv)
 
 Compilons le programme xdp pour obtenir son exécutable : `clang -O2 -g -target bpf -c log_xdp`.c -o log_xdp.o`
 
-Compilons le programme de l'espace utilisateur : ̀gcc user_log.c -o user_log $(pkg-config --libs --cflags libbpf) -lelf -lz`
+Compilons le programme de l'espace utilisateur : `gcc user_log.c -o user_log $(pkg-config --libs --cflags libbpf) -lelf -lz`
 
-Lancez le programme: `sudo ./user_log <interface> log_xdp.où <interface> est l'interface où vous voulez rattacher votre programme de monitoring.
+Lancez le programme: `sudo ./user_log <interface> log_xdp.o` où <interface> est l'interface où vous voulez rattacher votre programme de monitoring.
 
 **A vous**
 
 (Tester la fonctionnalité de votre code avec `iperf3`) 
 
-1. Modifier le précédent programme pour filtrer les paquets arrivant sur les ports 3000 et 8008, comme dans le dernier TP. Pour ces paquets rejetés, ajouter une colonne "ACCEPT" indiquant si le paquet correspondant a été accepté ou rejeté. (Les paquets arrivant sur les ports 3000/8008 doivent être affichés en "REJET").
-2. Rendre votre programme générique pour lire les ports à filtrer à partir d'une map (comme au précédent TP). 
+1. Modifier le programme précédent pour filtrer les paquets arrivant sur les ports 3000 et 8008, comme dans le dernier TP. Pour ces paquets rejetés, ajouter une colonne "ACCEPT" indiquant si le paquet correspondant a été accepté ou rejeté. (Les paquets arrivant sur les ports 3000/8008 doivent être affichés en "REJET").
+2. Rendre votre programme générique pour lire les ports à filtrer à partir d'une map (comme dans le [TP précédent](https://github.com/djobiii2078/sdn-nfv/blob/main/tps/ebpf/)). 
 
 ## PORT FORWARDING
 
