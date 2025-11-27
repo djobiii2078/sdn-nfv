@@ -397,5 +397,5 @@ Lancez le programme: `sudo ./user_log <interface> log_xdp.o` où <interface> est
 
 ## PORT FORWARDING
 
-Modifier votre précédent afin de rediriger les paquets arrivant sur le port 3000/9008 vers deux machines différentes en round robin. 
+Modifier votre précédent afin de rediriger les paquets arrivant sur le port 3000/8008 vers deux machines différentes en round robin. 
 Concrètement, à l'initialisation, votre programme devra charger les adresses mac des deux serveurs dans un `map`, puis rediriger les paquets vers chaque machine, à raison d'un paquet par machine. L'idée, c'est qu'au lieu de le rejetter, on le forwarde vers une autre machine. 
