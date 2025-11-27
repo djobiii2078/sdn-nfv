@@ -382,7 +382,7 @@ int main(int argc, char **argv)
 }
 ```
 
-Compilons le programme xdp pour obtenir son exécutable : `clang -O2 -g -target bpf -c log_xdp`.c -o log_xdp.o`
+Compilons le programme xdp pour obtenir son exécutable : `clang -O2 -g -target bpf -c log_xdp.c -o log_xdp.o`
 
 Compilons le programme de l'espace utilisateur : `gcc user_log.c -o user_log $(pkg-config --libs --cflags libbpf) -lelf -lz`
 
