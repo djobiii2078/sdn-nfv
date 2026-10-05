@@ -1,0 +1,92 @@
+{
+  "config": {
+    "model": "rtc",
+    "senders": 4,
+    "sinks": 2,
+    "rx": 1,
+    "workers": 0,
+    "capacity": 4096,
+    "batch": 1,
+    "idle": "poll",
+    "rate": 10000,
+    "bytes": 256,
+    "work": 100,
+    "sample": 64,
+    "repeat": 0
+  },
+  "results": {
+    "send": {
+      "role": "send",
+      "model": "rtc",
+      "idle": "poll",
+      "threads": 4,
+      "seconds": 60.0003,
+      "packets": 599972,
+      "rx_packets": 0,
+      "pps": 9999.48,
+      "queue_drop": 0,
+      "residual": 0,
+      "errors": 0,
+      "invalid": 0,
+      "cpu_seconds": 7.40842,
+      "latency_kind": "none",
+      "latency_samples": 0,
+      "p50_us": -1,
+      "p99_us": -1,
+      "queue_peak": 0,
+      "per_thread_packets": [
+        150000,
+        150000,
+        149972,
+        150000
+      ]
+    },
+    "forward": {
+      "role": "forward",
+      "model": "rtc",
+      "idle": "poll",
+      "threads": 1,
+      "seconds": 61.5001,
+      "packets": 599972,
+      "rx_packets": 0,
+      "pps": 9755.63,
+      "queue_drop": 0,
+      "residual": 0,
+      "errors": 0,
+      "invalid": 0,
+      "cpu_seconds": 59.9227,
+      "latency_kind": "none",
+      "latency_samples": 0,
+      "p50_us": -1,
+      "p99_us": -1,
+      "queue_peak": 0,
+      "per_thread_packets": [
+        599972
+      ]
+    },
+    "sink": {
+      "role": "sink",
+      "model": "rtc",
+      "idle": "poll",
+      "threads": 2,
+      "seconds": 62,
+      "packets": 599972,
+      "rx_packets": 0,
+      "pps": 9676.96,
+      "queue_drop": 0,
+      "residual": 0,
+      "errors": 0,
+      "invalid": 0,
+      "cpu_seconds": 123.393,
+      "latency_kind": "end_to_end",
+      "latency_samples": 9334,
+      "p50_us": 20.028,
+      "p99_us": 47.971,
+      "queue_peak": 0,
+      "per_thread_packets": [
+        299986,
+        299986
+      ]
+    }
+  }
+}

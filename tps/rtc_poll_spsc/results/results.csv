@@ -1,0 +1,4 @@
+model,senders,sinks,rx,workers,capacity,batch,idle,rate,bytes,work,sample,repeat,sent,received,achieved_send_pps,delivery_pps,loss_pct,sender_errors,forward_errors,queue_drop,residual,queue_peak,p50_us,p99_us,latency_samples,handoff_p99_us,forward_cpu_s,forward_wall_s,cpu_s_per_million
+shared,4,2,1,1,4096,1,poll,10000,256,100,64,0,600000,600000,9999.96,9999.966666777778,0.0,0,0,0,0,166,19.03,51.723,9334,21.138,121.047,61.5001,201.745
+rtc,4,2,1,0,4096,1,poll,10000,256,100,64,0,599972,599972,9999.48,9999.483335916653,0.0,0,0,0,0,0,20.028,47.971,9334,-1,59.9227,61.5001,99.87582753861847
+spsc,4,2,1,1,4096,1,poll,10000,256,100,64,0,599947,599947,9999.07,9999.06667133331,0.0,0,0,0,0,178,20.309,59.325,9334,21.384,120.469,61.5002,200.79940394734868
